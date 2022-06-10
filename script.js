@@ -8,3 +8,7 @@ function generateTarget() {
     const min = 0;
     return Math.floor(Math.random() * (max - min)) + min;
 }
+
+function compareGuesses(currentHumanGuess, computerGuess, target) {
+    return Math.abs(currentHumanGuess - target) < Math.abs(computerGuess - target);
+}
