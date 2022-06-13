@@ -19,6 +19,8 @@ function updateScore(winner) {
     } else if (winner === 'computer') {
         computerScore++;
     }
-    console.log(humanScore);
-    console.log(computerScore);
+}
+
+function advanceRound() {
+    currentRoundNumber++;
 }
