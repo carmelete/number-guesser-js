@@ -8,7 +8,9 @@ function generateTarget() {
 }
 
 function compareGuesses(currentHumanGuess, computerGuess, target) {
-    return Math.abs(currentHumanGuess - target) < Math.abs(computerGuess - target);
+    const humanDifference = Math.abs(target - currentHumanGuess);
+    const computerDifference = Math.abs(target - computerGuess);
+    return humanDifference <= computerDifference;
 }
 
 function updateScore(winner) {
